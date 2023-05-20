@@ -24,5 +24,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        view()->composer('*',function($view) {
+            $view->with('_auth', json_decode(\Illuminate\Support\Facades\Cookie::get('curr_user')) );
+        });
+
     }
 }

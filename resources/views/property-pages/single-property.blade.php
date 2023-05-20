@@ -4,12 +4,15 @@
     <link rel="stylesheet" href="/css/single-property-css.css">
     <style>
         .header {
-            background: grey !important;
+            background: white !important;
             position: relative !important;
+            border-bottom: 2px solid #eee;
+            padding: 5px 40px 0px 40px !important;
         }
 
         .header a {
-            color: white !important;
+            color: #1f1f1f !important;
+            font-weight: bold
         }
 
         #afb_main {
@@ -23,6 +26,17 @@
         .carousel.x img {
             max-height: 550px
         }
+
+        .color-text-a{
+            color: grey !important
+        }
+        .navbar-header > button{
+            display:none !important
+        }
+
+        .navbar-header .navbar-brand img{
+            border: 1px solid grey;
+        }
     </style>
     <!--/ Intro Single star /-->
     <section class="intro-single pt-0">
@@ -30,8 +44,8 @@
             <div class="row">
                 <div class="col-md-12 col-lg-8">
                     <div class="title-single-box">
-                        <h1 class="title-single">Castle Milk Rentals</h1>
-                        <span class="color-text-a">Miami, IL 606543</span>
+                        <h1 class="title-single">3744 NE 167th St #43</h1>
+                        <span class="color-text-a">North Miami Beach, FL 33160-3532</span>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-4">
@@ -44,7 +58,7 @@
                                 <a href="property-grid.html">Properties</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                Castle Milk Rentals
+                                3744 NE 167th St #43    
                             </li>
                         </ol>
                     </nav>
@@ -58,53 +72,94 @@
     <section class="property-single nav-arrow-b">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 ">
-                    {{-- <div class="owl-carousel owl-arrow gallery-property">
-                        <div class="carousel-item-b mb-5">
-                            <img class="w-100" src="/images/slide-2.jpg" alt="">
-                        </div>
-                        <div class="carousel-item-b">
-                            <img src="/images/slide-2.jpg" alt="">
-                        </div>
-                        <div class="carousel-item-b">
-                            <img src="/images/slide-2.jpg" alt="">
-                        </div>
-                    </div> --}}
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-12 col-md-9">
+                            <div id="property-single-carousel" class="carousel x slide owl-carousel owl-arrow gallery-property"
+                                data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-interval="10000">
+                                        <img src='{{asset("images/slider_images/GetMedia_0.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_0.jpeg")}}'>
+                                    </div>
 
-                    <div id="property-single-carousel" class="carousel x slide owl-carousel owl-arrow gallery-property"
-                        data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-interval="10000">
-                                <img src="/images/slide-2.jpg" class="d-block w-100" alt="/images/slide-2.jpg">
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_1.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_1.jpeg")}}'>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_2.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_2.jpeg")}}'>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_3.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_3.jpeg")}}'>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_4.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_4.jpeg")}}'>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_5.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_5.jpeg")}}'>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_6.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_6.jpeg")}}'>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_7.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_7.jpeg")}}'>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_8.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_8.jpeg")}}'>
+                                    </div>
+
+
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_9.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_9.jpeg")}}'>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_10.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_10.jpeg")}}'>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_11.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_11.jpeg")}}'>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_12.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_12.jpeg")}}'>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_13.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_13.jpeg")}}'>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src='{{asset("images/slider_images/GetMedia_14.jpeg")}}' class="d-block w-100" alt='{{asset("images/slider_images/GetMedia_14.jpeg")}}'>
+                                    </div>
+                                    
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-target="#property-single-carousel"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-target="#property-single-carousel"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </button>
                             </div>
-                            <div class="carousel-item" data-interval="2000">
-                                <img src="/images/logos/BoysBeach.jpg" class="d-block w-100"
-                                    alt="/images/logos/BoysBeach.jpg">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/images/slide-2.jpg" class="d-block w-100" alt="/images/slide-2.jpg">
-                            </div>
+
                         </div>
-                        <button class="carousel-control-prev" type="button" data-target="#property-single-carousel"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-target="#property-single-carousel"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </button>
-                    </div>
-                    <div class="row justify-content-between">
-                        <div class="col-md-5 col-lg-4">
+                        <div class="col-12 col-md-3">
                             <div class="property-price d-flex justify-content-center foo mb-4">
                                 <div class="card-header-c d-flex">
                                     <div class="card-box-ico">
                                         <span class="ion-money">$</span>
                                     </div>
                                     <div class="card-title-c align-self-center">
-                                        <h5 class="title-c" style="border-bottom: 3px solid #2d2d2d;">15000</h5>
+                                        <h5 class="title-c" style="border-bottom: 3px solid #2d2d2d;">770,000</h5>
                                     </div>
                                 </div>
                             </div>
@@ -112,27 +167,23 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="title-box-d section-t4">
-                                            <h3 class="title-d">Quick Summary</h3>
+                                            <h2 class="title-d">Quick Summary</h2>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="summary-list">
                                     <ul class="list">
                                         <li class="d-flex justify-content-between">
-                                            <strong>Property ID:</strong>
-                                            <span>1134</span>
-                                        </li>
-                                        <li class="d-flex justify-content-between">
                                             <strong>Location:</strong>
-                                            <span>Chicago, IL 606543</span>
+                                            <span>&nbsp;North Miami Beach, FL 33160-3532</span>
                                         </li>
                                         <li class="d-flex justify-content-between">
                                             <strong>Property Type:</strong>
-                                            <span>House</span>
+                                            <span>Condominium</span>
                                         </li>
                                         <li class="d-flex justify-content-between">
-                                            <strong>Status:</strong>
-                                            <span>Sale</span>
+                                            <strong>Size:</strong>
+                                            <span>1,486 sqft</span>
                                         </li>
                                         <li class="d-flex justify-content-between">
                                             <strong>Area:</strong>
@@ -142,46 +193,76 @@
                                         </li>
                                         <li class="d-flex justify-content-between">
                                             <strong>Beds:</strong>
-                                            <span>4</span>
-                                        </li>
-                                        <li class="d-flex justify-content-between">
-                                            <strong>Baths:</strong>
                                             <span>2</span>
                                         </li>
                                         <li class="d-flex justify-content-between">
-                                            <strong>Garage:</strong>
-                                            <span>1</span>
+                                            <strong>Baths:</strong>
+                                            <span>3</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <strong>Days on Market:</strong>
+                                            <span>10</span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+
                         </div>
-                        <div class="col-md-7 col-lg-7 section-md-t3">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="title-box-d">
-                                        <h3 class="title-d">Property Description</h3>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-md-5 col-lg-4">
+                            <div class="">
+                                <div class="row section-t3">
+                                    <div class="col-sm-12">
+                                        <div class="title-box-d">
+                                            <h3 class="title-d">Contact Seller</h3>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img style="border-radius:50%" src="https://www.castlemilk.rentals/wp-content/uploads/2023/02/mickael.jpg"
+                                            alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="property-agent">
+                                            <ul class="list-unstyled">
+                                                <li class="d-flex justify-content-between">
+                                                    <strong>Phone:</strong>
+                                                    <span class="color-text-a"><a href="tel:(786) 248-1055">(786) 248-1055</a></span>
+                                                </li>
+                                                <li class="d-flex justify-content-between">
+                                                    <strong>WhatsApp:</strong>
+                                                    <span class="color-text-a"><a href="https://wa.me/13472449996">(347) 244-9996</a></span>
+                                                </li>
+                                                <li class="d-flex justify-content-between">
+                                                    <strong>Email:</strong>
+                                                    <span class="color-text-a"><a href="mailto:mickael@mbdv.us">mickael@mbdv.us</a></span>
+                                                </li>
+                                                <!-- <li class="d-flex justify-content-between">
+                                                    <strong>Skype:</strong>
+                                                    <span class="color-text-a">Annabela.ge</span>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                                    </div>
+                                    <div class="col-md-7 col-lg-7 section-md-t3">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="title-box-d">
+                                                    <h3 class="title-d">Property Description</h3>
+                                                </div>
                                 </div>
                             </div>
                             <div class="property-description">
                                 <p class="description color-text-a">
-                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                                    Curae;
-                                    Donec velit
-                                    neque, auctor sit amet
-                                    aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum
-                                    porta.
-                                    Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget
-                                    tincidunt
-                                    nibh pulvinar quam id dui posuere blandit.
+                                Corner townhouse with 20-foot dock in the beautiful, gated community of Eastern Shores. Unrestricted ocean access. Just minutes to Haulover cut. The bedrooms each with their own bathroom are located on the second level. Half bathroom on first level. Porcelain flooring throughout the property. Hurricane impact sliding glass door. Entertain your guests on the patio overlooking the water. Two assigned parking spaces just outside your front door. 
                                 </p>
                                 <p class="description color-text-a no-margin">
-                                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue
-                                    leo
-                                    eget
-                                    malesuada. Quisque velit nisi,
-                                    pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.
+                                Walking distance to numerous restaurants, shopping and IPEC movie theater. Special assessment has been passed for installation of a new seawall. Roof is 5 years old. Photos with furniture are staged photos. There is no furniture. Kitchen is a staged photo.
                                 </p>
                             </div>
                             <div class="row section-t3">
@@ -193,15 +274,11 @@
                             </div>
                             <div class="amenities-list color-text-a">
                                 <ul class="list-a no-margin">
-                                    <li>Balcony</li>
-                                    <li>Outdoor Kitchen</li>
-                                    <li>Cable Tv</li>
-                                    <li>Deck</li>
-                                    <li>Tennis Courts</li>
-                                    <li>Internet</li>
-                                    <li>Parking</li>
-                                    <li>Sun Room</li>
-                                    <li>Concrete Flooring</li>
+                                    <li>Heating</li>
+                                    <li>Cooling</li>
+                                    <li>Utilities</li>
+                                    <li>Pool</li>
+                                    <li>Pets Allowed</li>
                                 </ul>
                             </div>
                         </div>
@@ -211,16 +288,16 @@
                     <ul class="nav nav-pills-a nav-pills mb-3 section-t3" id="pills-tab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="pills-video-tab" data-toggle="pill" href="#pills-video"
-                                role="tab" aria-controls="pills-video" aria-selected="true">Video</a>
+                                role="tab   " aria-controls="pills-video" aria-selected="true">Video</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="pills-plans-tab" data-toggle="pill" href="#pills-plans"
                                 role="tab" aria-controls="pills-plans" aria-selected="false">Floor Plans</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" id="pills-map-tab" data-toggle="pill" href="#pills-map" role="tab"
                                 aria-controls="pills-map" aria-selected="false">Ubication</a>
-                        </li>
+                        </li> -->
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-video" role="tabpanel"
@@ -238,83 +315,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 mt-5">
-                    <div class="row section-t3">
-                        <div class="col-sm-12">
-                            <div class="title-box-d">
-                                <h3 class="title-d">Contact Seller</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-xsukd&psig=AOvVaw1sVuE1mFwODaCrbGUt9Rjh&ust=1683134477551000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJij5tiS1_4CFQAAAAAdAAAAABAE"
-                                alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="property-agent">
-                                <h4 class="title-agent">Anabella Geller</h4>
-                                <p class="color-text-a">
-                                    Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula
-                                    elementum
-                                    sed sit amet
-                                    dui. Quisque velit nisi,
-                                    pretium ut lacinia in, elementum id enim.
-                                </p>
-                                <ul class="list-unstyled">
-                                    <li class="d-flex justify-content-between">
-                                        <strong>Phone:</strong>
-                                        <span class="color-text-a">(222) 4568932</span>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
-                                        <strong>Mobile:</strong>
-                                        <span class="color-text-a">777 287 378 737</span>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
-                                        <strong>Email:</strong>
-                                        <span class="color-text-a">annabella@example.com</span>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
-                                        <strong>Skype:</strong>
-                                        <span class="color-text-a">Annabela.ge</span>
-                                    </li>
-                                </ul>
-                                <div class="socials-a">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#">
-                                                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-4">
-
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
